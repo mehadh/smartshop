@@ -11,6 +11,7 @@
     background-size: cover;
     background-position: center;
     filter: brightness(350%);
+    
 }
 .navbar{
     width: auto;
@@ -55,3 +56,19 @@ button{
     font-size: 18px;
     font-family: Papyrus;
 }
+.logo2{
+    padding-top: 15px;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    height: 75px;
+    filter: brightness(25%);
+    transform: translateY(-340%);
+    float:left;
+    
+}
+.header{
+    font-style: italic;
+    font-variant: small-caps;
+    transform: translateY(-700%);
+}
+
