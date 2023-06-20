@@ -40,7 +40,39 @@
     color: #fff;
 }
 
-button{
+#contact{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 3px solid #18c218;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    filter: brightness(25%);
+    color: white;
+    font-size: 18px;
+    font-family: Papyrus;
+}
+#aboutus{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 3px solid #18c218;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    filter: brightness(25%);
+    color: white;
+    font-size: 18px;
+    font-family: Papyrus;
+}
+#help{
     width: 200px;
     padding: 15px 0;
     text-align: center;
@@ -71,26 +103,33 @@ button{
     font-variant: small-caps;
     transform: translateY(-700%);
 }
+#back{
 
-.box{
-    height: 30px;
-    width: 500px;
-    display: flex;
-    cursor: pointer;
-    padding: 10px 20px;
-    background: #fff;
-    border-radius: 30px;
-    align-items: center;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-    transform: translateX(350px) translateY(130px);
+  align-items: center;
+  background-color: #fee6e3;
+  border: 2px solid #111;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #111;
+  cursor: pointer;
+  display: flex;
+  font-family: Inter,sans-serif;
+  font-size: 16px;
+  height: 48px;
+  justify-content: center;
+  line-height: 24px;
+  max-width: 100%;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  font-family: Garamond;
 }
 
+#cont{
+    font-family: Garamond;
 
-.box input{
-    width: 0;
-    outline: none;
-    border: none;
-    font-weight: 500;
-    transition: 0.8s;
-    background: transparent;
 }
