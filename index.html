@@ -27,9 +27,24 @@
         </div>
         <div class="content">
             <div>
-            <button type="button">Contact</button>
-            <button type="button">About Us</button>
-            <button type="button">Help</button>
+            <button id= "redirect" type="button">Contact</button>
+            <script>
+                document.querySelector('#redirect')
+                .addEventListener('click',()=>{window.location.href = 'pages/contact.html';});
+            </script>
+            
+            <button id="redirect2" type="button">About Us</button>
+            <script>
+                document.querySelector('#redirect2')
+                 .addEventListener('click',()=>{window.location.href = 'pages/about.html';});
+            </script>
+            
+            <button id="redirect3" type="button">Help</button>
+            <script>
+                document.querySelector('#redirect3')
+                 .addEventListener('click',()=>{window.location.href = 'pages/help.html';});
+            </script>
+            
             </div>
         </div>  
     </div>  
