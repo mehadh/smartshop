@@ -47,7 +47,7 @@ button{
     margin: 20px 10px;
     border-radius: 25px;
     font-weight: bold;
-    border: 3px solid #053005;
+    border: 3px solid #18c218;
     background: transparent;
     color: #fff;
     cursor: pointer;
@@ -72,6 +72,25 @@ button{
     transform: translateY(-700%);
 }
 
-#submit{
-    border: rgb(43, 3, 3);
+.box{
+    height: 30px;
+    width: 500px;
+    display: flex;
+    cursor: pointer;
+    padding: 10px 20px;
+    background: #fff;
+    border-radius: 30px;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    transform: translateX(350px) translateY(130px);
+}
+
+
+.box input{
+    width: 0;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    transition: 0.8s;
+    background: transparent;
 }
