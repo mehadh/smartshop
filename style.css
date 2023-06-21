@@ -136,7 +136,7 @@
 #smartshoplogo{
     font-family: "Papyrus";
     transform: translateY(165%);
-    color: rgb(255, 162, 0);
+    color: orange;
     font-weight: bold;
     filter: brightness(35%);
 }
