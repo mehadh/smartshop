@@ -133,3 +133,10 @@
     font-family: Garamond;
 
 }
+#smartshoplogo{
+    font-family: "Papyrus";
+    transform: translateY(165%);
+    color: rgb(255, 162, 0);
+    font-weight: bold;
+    filter: brightness(35%);
+}
