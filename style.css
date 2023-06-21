@@ -127,6 +127,7 @@
   -webkit-user-select: none;
   touch-action: manipulation;
   font-family: Garamond;
+
 }
 
 #cont{
@@ -139,4 +140,9 @@
     color: orange;
     font-weight: bold;
     filter: brightness(35%);
+}
+#abouttext{
+    font-family: Garamond;
+    text-indent: 50px;
+    line-height: 1.8;
 }
