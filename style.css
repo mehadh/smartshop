@@ -10,7 +10,7 @@
     background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(/images/background.png);
     background-size: cover;
     background-position: center;
-    filter: brightness(350%);
+    filter: brightness(375%);
     
 }
 .navbar{
@@ -21,13 +21,13 @@
     transform: translateY(-50%);
     text-align: center;
     color: #fff;
-    filter: brightness(25%);
+    filter: brightness(35%);
 }
 .logo {
         padding-top: 15px;
         -webkit-transition: all 0.3s ease-out;
         transition: all 0.3s ease-out;
-        height: 300px;
+        height: 250px;
 }
 
 
@@ -47,11 +47,11 @@
     margin: 20px 10px;
     border-radius: 25px;
     font-weight: bold;
-    border: 3px solid #18c218;
+    border: 3px solid rgb(255, 68, 0);;
     background: transparent;
     color: #fff;
     cursor: pointer;
-    filter: brightness(25%);
+    filter: brightness(35%);
     color: white;
     font-size: 18px;
     font-family: Papyrus;
@@ -63,11 +63,11 @@
     margin: 20px 10px;
     border-radius: 25px;
     font-weight: bold;
-    border: 3px solid #18c218;
+    border: 3px solid rgb(255, 68, 0);
     background: transparent;
     color: #fff;
     cursor: pointer;
-    filter: brightness(25%);
+    filter: brightness(35%);
     color: white;
     font-size: 18px;
     font-family: Papyrus;
@@ -79,11 +79,11 @@
     margin: 20px 10px;
     border-radius: 25px;
     font-weight: bold;
-    border: 3px solid #18c218;
+    border: 3px solid rgb(255, 68, 0);;
     background: transparent;
     color: #fff;
     cursor: pointer;
-    filter: brightness(25%);
+    filter: brightness(35%);
     color: white;
     font-size: 18px;
     font-family: Papyrus;
@@ -92,8 +92,8 @@
     padding-top: 15px;
     -webkit-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
-    height: 75px;
-    filter: brightness(25%);
+    height: 58px;
+    filter: brightness(35%);
     transform: translateY(-340%);
     float:left;
     
@@ -136,10 +136,11 @@
 }
 #smartshoplogo{
     font-family: "Papyrus";
-    transform: translateY(165%);
-    color: orange;
+    transform: translateY(270%);
+    color: white;
     font-weight: bold;
-    filter: brightness(35%);
+    filter: brightness(50%);
+    font-size: relative;
 }
 #abouttext{
     font-family: Garamond;
