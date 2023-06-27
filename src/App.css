@@ -1,7 +1,7 @@
 .SmartShop{
     background-image: url("/public/images/background.png");
     height: 100vh;
-    width: auto%;
+    width: auto;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
