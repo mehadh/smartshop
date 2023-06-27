@@ -1,0 +1,12 @@
+.App{
+    text-align: center;
+    height: auto;
+    display:flex;
+    flex-direction: column;
+    font-family: Garamond;
+
+}
+.body{
+    padding:0;
+    margin: 0;
+}
