@@ -3,6 +3,7 @@ import { useState } from "react";
 import Navbar from './components/Navbar';
 import Home from "./pages/Home";
 import About from "./pages/About";
+import Contact from "./pages/Contact";
 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
@@ -28,7 +29,7 @@ function App(){
         <Routes>
           <Route path= "/" exact component={Home} />
           <Route path="/About" exact component={About} />
-          
+          <Route path="/Contact" exact component={Contact} />
         </Routes>
         
       </Router>

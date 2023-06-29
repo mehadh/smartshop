@@ -1,13 +1,13 @@
 import React from 'react';
 import Logo from "../images/logo.png";
 import "../styles/About.css";
+
 function About() {
   return (
     <div className="about">
         <div className = "aboutTop" 
         style={{ backgroundImage: `url(${Logo})` }}
-      > 
-        </div>
+      > </div>
         <div className = "aboutBottom">
             <h1> ABOUT US</h1>
             <p>
@@ -31,7 +31,7 @@ function About() {
 
         </div>
     </div>
-  )
+  );
 }
 
 export default About
