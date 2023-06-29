@@ -2,6 +2,8 @@ import './App.css';
 import { useState } from "react";
 import Navbar from './components/Navbar';
 import Home from "./pages/Home";
+import About from "./pages/About";
+
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App(){
@@ -18,11 +20,15 @@ function App(){
   }
 
   return (
-    <div className ="App">
+    
+    <div className ="App"> 
+    
       <Router>
         <Navbar />
         <Routes>
           <Route path= "/" exact component={Home} />
+          <Route path="/About" exact component={About} />
+          
         </Routes>
         
       </Router>
@@ -31,7 +37,9 @@ function App(){
         <button onClick={() => onSearch(value)}>Search</button>
       </div>
     </div>
-      
+
+    
+     
 
   );
 }
