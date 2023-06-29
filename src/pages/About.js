@@ -6,7 +6,7 @@ function About() {
   return (
     <div className="about">
         <div className = "aboutTop" 
-        style={{ backgroundImage: `url(${Logo})` }}
+       
       > </div>
         <div className = "aboutBottom">
             <h1> ABOUT US</h1>
@@ -26,7 +26,6 @@ function About() {
              With just a few clicks, you can make informed decisions and plan your shopping trips 
              efficiently. We believe that grocery shopping should be hassle-free, cost-effective, 
              and enjoyable, which is why we created SmartShop.
-
             </p>
 
         </div>
