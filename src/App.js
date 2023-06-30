@@ -23,7 +23,6 @@ function App(){
   return (
     
     <div className ="App"> 
-    
       <Router>
         <Navbar />
         <Routes>
@@ -31,7 +30,6 @@ function App(){
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
-        
       </Router>
       <div className= "search">
         <input type="text" value={value} onChange={onChange}/>
