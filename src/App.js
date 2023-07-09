@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
 import Home from "./pages/Home";
@@ -7,36 +8,29 @@ import axios from "axios";
 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
-function App(){
-  const data = async() => {
-    try {
-      const response = await axios.get("localhost:3001/test")
-      return response.data
-    }
-    catch(error){
-      console.log(error)
-      return ":("
-    }
-  }
+function App() {
+  const [apiData, setApiData] = useState(null);
+
+  axios.get("http://localhost:3001/test")
+    .then(response => setApiData(response.data))
+    .catch(error => {
+      console.log(error);
+      setApiData(":(");
+    });
+
   return (
-    
-    <div className ="App"> 
+    <div className="App">
       <Router>
         <Navbar />
         <Routes>
-        <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </Router>
-      <p>
-        {await data()}
-      </p>
+      <p>{apiData}</p>
     </div>
-
-    
-     
-
   );
 }
+
 export default App;
