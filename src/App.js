@@ -5,7 +5,6 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import axios from "axios";
-
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {

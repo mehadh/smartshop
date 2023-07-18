@@ -29,7 +29,7 @@ const products = [
 ]
 //backend search function
 function searchProducts (query){
-    const lowerCaseQuery = query.toLowerCase(); //making the query case insensitive
+    const lowerCaseQuery = query.toLowerCase(); //making the query case-insensitive
 
     //filtering the products
     const searchResults = products.filter((product) => {
