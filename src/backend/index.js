@@ -6,11 +6,6 @@ const cors = require('cors')
 app.use(cors());
 
 
-
-app.get('/test', (req, res) => {
-    res.send('Hello!')
-} )
-
 app.get('/search', (req, res) => {
     const { query } = req.query;
     const results = searchProducts(query);

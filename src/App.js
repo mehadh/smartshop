@@ -15,7 +15,7 @@ function App() {
     .then(response => setApiData(response.data))
     .catch(error => {
       console.log(error);
-      setApiData(":(");
+      setApiData("");
     });
 
   return (

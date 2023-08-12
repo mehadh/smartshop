@@ -1,35 +1,21 @@
 import React from "react";
-import { useState } from "react";
-import axios from "axios";
 import "../styles/Home.css";
 import bg from '../images/background.png';
 import logo from '../images/logo.png';
-
+import { SearchBar } from "../components/SearchBar";
+import axios from 'axios';
 
 function Home() {
 
-  const [query, setQuery] = useState("");
-  const [searchResults, setSearchResults] = useState([]);
+    const handleSearch = async (searchTerm) => {
+      try {
+        const response = await axios.get(`http://localhost:3001/search?query=${searchTerm}`);
 
-  // Function to call the backend search function and update searchResults
-  const handleSearch = async (searchQuery) => {
-    try {
-      const response = await axios.get(`http://localhost:3001/search`, {
-        params: {
-          query: searchQuery
-        }
-      });
-      setSearchResults(response.data);
-    } catch (error) {
-      console.error("Error fetching search results:", error);
-    }
-  };
-
-  const handleChange = (event) => {
-    const searchQuery = event.target.value;
-    setQuery(searchQuery);
-    handleSearch(searchQuery);
-  };
+        console.log(response.data)
+      } catch (error) {
+        console.error(error);
+      }
+    };
 
   return (
     <div className="home" style={{ backgroundImage: `url(${bg})` }}>
@@ -38,21 +24,10 @@ function Home() {
         <h1>SmartShop</h1>
         <p>Shopping made easier and cheaper</p>
       </div>
-      <div>
-        <input
-          type="text"
-          value={query}
-          onChange={handleChange}
-          placeholder="Search for products"
-        />
-      </div>
-      <div>
-        {/* Display search results here */}
-        {searchResults.map((product, index) => (
-          <div key={index}>
-            <p>{product.name}</p>
-          </div>
-        ))}
+      <div className= "search-bar-container">
+
+        <SearchBar handleSearch={handleSearch}/>
+
       </div>
     </div>
 
