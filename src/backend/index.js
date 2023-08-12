@@ -35,8 +35,8 @@ function searchProducts (query){
     const searchResults = products.filter((product) => {
         const lowercaseName = product.name.toLowerCase();
 
-        return (lowercaseName.includes(lowerCaseQuery)) 
-    })
+        return (lowercaseName.startsWith(lowerCaseQuery)) 
+    });
 
     return searchResults
 

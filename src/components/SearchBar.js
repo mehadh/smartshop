@@ -4,11 +4,18 @@ import "./SearchBar.css";
 
 export const SearchBar = ( {handleSearch }) => {
     const [searchTerm, setSearchTerm] = useState('');
+    const [searchResults, setSearchResults] = useState([]);
 
     const handleChange = async (event) => {
         const newSearchTerm = event.target.value;
         setSearchTerm(newSearchTerm);
-        handleSearch(newSearchTerm)
+
+        if (newSearchTerm.trim() !== '') {
+            const results = await handleSearch(newSearchTerm);
+            setSearchResults(results);
+          } else {
+            setSearchResults([]);
+          }
 
     };
     return (
@@ -19,5 +26,14 @@ export const SearchBar = ( {handleSearch }) => {
                    value={searchTerm}
                    onChange={handleChange}
             />
-    </div>
+            {searchResults.length > 0 && (
+                <div className="search-results">
+                    {searchResults.map((result, index) => (
+                        <div key={index} className="search-result-item">
+                            {result.name}
+                        </div>
+                    ))}
+                </div>
+            )}
+        </div>
 )};

@@ -10,10 +10,10 @@ function Home() {
     const handleSearch = async (searchTerm) => {
       try {
         const response = await axios.get(`http://localhost:3001/search?query=${searchTerm}`);
-
-        console.log(response.data)
+        return response.data
       } catch (error) {
         console.error(error);
+        return [];
       }
     };
 
